@@ -24,7 +24,7 @@ app.use(cors());
 
 mongoose
   .connect(
-    "mongodb+srv://HimanshuSingh:Idea0362@cluster0-jwfcs.mongodb.net/HackStack?retryWrites=true&w=majority",
+    `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@cluster0-jwfcs.mongodb.net/${MONGO_DB}?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
