@@ -1,4 +1,4 @@
-This is the Server Section for is the [Task Management App](https://myhacktaskmanager.netlify.app)
+This is the [Task Management App](https://myhacktaskmanager.netlify.app)
 
 An App to manage Day to Day Tasks by maintaining Records in the App.
 
