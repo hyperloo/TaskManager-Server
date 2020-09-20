@@ -9,9 +9,12 @@ const auth = require("./routes/api/auth");
 
 const app = express();
 
+/* ------------- Middleware ----------------*/
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
+
+/*---------- A simple CORS implementation ---------------------*/
 // app.use((req, res, next) => {
 //   res.setHeader("Access-Control-Allow-Origin", "*");
 //   res.setHeader("Access-Control-Allow-Methods", "POST,GET,OPTIONS,DELETE");
@@ -21,10 +24,12 @@ app.use(cors());
 //   }
 //   next();
 // });
+//for server Deployment, user process.env.respective_variable
 
+/*------------------------Connect DB ------------------------*/
 mongoose
   .connect(
-    `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0-jwfcs.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
+    `mongodb+srv://HimanshuSingh:Idea0362@cluster0-jwfcs.mongodb.net/HackStack?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
