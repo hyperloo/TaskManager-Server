@@ -66,3 +66,13 @@ This is the `Details Popup` which shows all the details of the clicked Task. Thi
 - Creator Name
 
 **Note**: Can also delete the given task
+
+## _Features_
+
+- Can Sort Tasks Based on Multiple Fields like
+
+  - Type of task
+  - Status of Task
+  - Due date Priority
+
+- Can Also Search by Task name
