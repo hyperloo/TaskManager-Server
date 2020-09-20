@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/badge/frontend-ReactJS-blue?style=flat&logo=React">
 <img src="https://img.shields.io/badge/database-MongoDB-darkgreen?style=flat&logo=MongoDB">
 <img src="https://img.shields.io/badge/Authentication-JSON Web Tokens-orange?style=flat&logo=json-web-tokens">
-<img src="https://img.shields.io/badge/Other technologies-Context API-9cf?style=flat&logo=json-web-tokens">
+<img src="https://img.shields.io/badge/Other technologies-Context API-9cf?">
 </p>
 <br/>
 > `Scheduling Tasks` is one of the most important step to manage your Day to Day Tasks.
