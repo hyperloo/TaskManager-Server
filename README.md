@@ -1,14 +1,15 @@
 # **Task Management App 📅 👈**
 
+<br/>
+
 <p align="center">
 <img src="https://img.shields.io/badge/backend-NodeJS-darkgreen?style=flat&logo=Node.js">
 <img src="https://img.shields.io/badge/framework-ExpressJS-yellowgreen?style=flat">
 <img src="https://img.shields.io/badge/frontend-ReactJS-blue?style=flat&logo=React">
 <img src="https://img.shields.io/badge/database-MongoDB-darkgreen?style=flat&logo=MongoDB">
 <img src="https://img.shields.io/badge/Authentication-JSON Web Tokens-orange?style=flat&logo=json-web-tokens">
-
 </p>
-
+<br/>
 > `Scheduling Tasks` is one of the most important step to manage your Day to Day Tasks.
 
 This is the [Task Management App](https://myhacktaskmanager.netlify.app)
