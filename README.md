@@ -11,11 +11,14 @@
 <img src="https://img.shields.io/badge/Other technologies-Context API-9cf?">
 </p>
 <br/>
+
 > `Scheduling Tasks` is one of the most important step to manage your Day to Day Tasks.
 
 This is the [Task Management App](https://myhacktaskmanager.netlify.app)
 
-An App to manage `Day to Day Tasks` by maintaining Records in the App. <br /><br />
+An App to manage `Day to Day Tasks` by maintaining Records in the App.
+<br />
+[Click for Client Repo](https://github.com/HyperLoo/TaskManager-Client)
 
 ## **Login and Register Section 🔑**
 
