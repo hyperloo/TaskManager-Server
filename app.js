@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+require("dotenv").config();
 
 const tasks = require("./routes/api/tasks");
 const users = require("./routes/api/users");
@@ -28,17 +29,16 @@ app.use(cors());
 
 /*------------------------Connect DB ------------------------*/
 mongoose
-  .connect(
-    `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0-jwfcs.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
-    // `mongodb+srv://HimanshuSingh:Idea0362@cluster0-jwfcs.mongodb.net/HackStack?retryWrites=true&w=majority`,
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-    }
-  )
-  .then(() => console.log("MongoDb connected....."))
-  .catch((err) => console.log("Cannot connect to db due to " + err));
+	.connect(
+		`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0-jwfcs.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
+		{
+			useNewUrlParser: true,
+			useUnifiedTopology: true,
+			useCreateIndex: true,
+		}
+	)
+	.then(() => console.log("MongoDb connected....."))
+	.catch((err) => console.log("Cannot connect to db due to " + err));
 
 app.use("/api/tasks", tasks);
 app.use("/api/register", users);
