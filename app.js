@@ -7,13 +7,16 @@ require("dotenv").config();
 const tasks = require("./routes/api/tasks");
 const users = require("./routes/api/users");
 const auth = require("./routes/api/auth");
-
+const xss = require("xss-clean");
+const helmet = require("helmet");
 const app = express();
 
 /* ------------- Middleware ----------------*/
+app.use(helmet.contentSecurityPolicy());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
+app.use(xss());
 
 /*---------- A simple CORS implementation ---------------------*/
 // app.use((req, res, next) => {
